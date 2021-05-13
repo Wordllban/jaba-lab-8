@@ -1,4 +1,4 @@
-# jaba-lab8
+# jaba-lab-8
 ## Task
   > Create Java Maven project, write code for class diagram from 2nd lab
   > Use plagins: [Jacoco](https://mvnrepository.com/artifact/org.jacoco/jacoco-maven-plugin), [PMD](https://maven.apache.org/plugins/maven-pmd-plugin/download.cgi), [Checkstyle](https://maven.apache.org/plugins/maven-checkstyle-plugin/checkstyle-mojo.html) - ignore comments and magic number errors
