@@ -13,7 +13,7 @@ public class Motor extends Device {
                DeviceType deviceType, String manufacturer, boolean isPowered,
                double revolutionsPerSec) {
     super(price, operatingVoltageInWatts, currentConsumptionInWatts, deviceType,
-        manufacturer, isPowered);
+        manufacturer);
     this.revolutionsPerSec = revolutionsPerSec;
   }
 }

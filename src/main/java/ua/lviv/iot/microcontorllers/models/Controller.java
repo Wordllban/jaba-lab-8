@@ -13,7 +13,7 @@ public class Controller extends Device {
                     DeviceType deviceType, final String manufacturer, boolean isPowered,
                     int totalNumberOfPins) {
     super(price, operatingVoltageInWatts, currentConsumptionInWatts, deviceType,
-        manufacturer, isPowered);
+        manufacturer);
     this.totalNumberOfPins = totalNumberOfPins;
   }
 }

@@ -33,7 +33,6 @@ public final class DeviceManager {
     } else {
       devices.sort(Comparator.comparing(Device::getManufacturer).reversed());
     }
-
     return devices;
   }
 
