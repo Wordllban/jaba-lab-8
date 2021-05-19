@@ -1,58 +1,62 @@
 package ua.lviv.iot.microcontorllers.controllers;
 import ua.lviv.iot.microcontorllers.models.Device;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import ua.lviv.iot.microcontorllers.service.DeviceService;
 
-import java.util.Collection;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.List;
+import java.util.NoSuchElementException;
 
-@RequestMapping(path = "/device")
 @RestController
+@RequestMapping("/devices")
 public class DeviceController {
-  int counter = 1;
-  private final Map<Integer, Device> devices = new HashMap<>();
-
-  @PostMapping
-  public ResponseEntity<Object> addDevice(@RequestBody Device device){
-    device.setId(counter++);
-    devices.put(device.getId(), device);
-    return ResponseEntity.ok(Collections.singletonMap("id", device.getId()));
-  }
+  @Autowired
+  DeviceService deviceService;
 
   @GetMapping
-  public Collection<Device> getDevices(){
-    return devices.values();
+  public List<Device> getList() {
+    return deviceService.allDevices();
   }
 
-  @GetMapping(path ="{id}")
-  public ResponseEntity<Device> getDevice(@PathVariable("id") int id){
-    Device device = devices.get(id);
-    if (device != null)
-      return ResponseEntity.ok(device);
-    return ResponseEntity.notFound().build();
-  }
-
-  @DeleteMapping(path ="{id}")
-  public ResponseEntity<Object> deleteDevice(@PathVariable("id") int id){
-    Device device = devices.get(id);
-    if(device != null){
-      devices.remove(id);
-      return ResponseEntity.ok(Collections.singletonMap("id", id));
+  @GetMapping("/{id}")
+  public ResponseEntity<Device> addDevice(@PathVariable Integer id) {
+    try {
+      Device device = deviceService.getDevice(id);
+      return new ResponseEntity<Device>(device, HttpStatus.OK);
+    } catch (NoSuchElementException e) {
+      return new ResponseEntity<Device>(HttpStatus.NOT_FOUND);
     }
-    return ResponseEntity.notFound().build();
   }
 
-  @PutMapping(path ="{id}")
-  public ResponseEntity<Device> updateDevice(@RequestBody Device newDevice, @PathVariable("id") int id){
-    Device oldDevice = devices.get(id);
-    if(oldDevice != null){
-      newDevice.setId(id);
-      devices.replace(id, newDevice);
-      return ResponseEntity.ok(oldDevice);
+  @PostMapping()
+  public void addDevice(@RequestBody Device device) {
+    deviceService.saveDevice(device);
+  }
+
+  @PutMapping("/{id}")
+  public ResponseEntity<Device> updateDevice(@RequestBody Device device, @PathVariable Integer id) {
+    try {
+      Device existDevice = deviceService.getDevice(id);
+      device.setId(id);
+      deviceService.saveDevice(device);
+      return new ResponseEntity<>(HttpStatus.OK);
+    } catch (NoSuchElementException e) {
+      return new ResponseEntity<>(HttpStatus.NOT_FOUND);
     }
-    return ResponseEntity.notFound().build();
+  }
+
+  @DeleteMapping("/{id}")
+  public ResponseEntity<Device> deleteDevice(@PathVariable Integer id) {
+    try {
+      Device existDevice = deviceService.getDevice(id);
+      deviceService.deleteDevice(id);
+      return new ResponseEntity<>(HttpStatus.OK);
+    } catch (NoSuchElementException e) {
+      return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+    }
+
   }
 }
