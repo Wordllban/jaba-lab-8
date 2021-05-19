@@ -4,11 +4,16 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import ua.lviv.iot.microcontorllers.enums.DeviceType;
 
+import javax.persistence.*;
 
 
 @Data
+@Entity
 @NoArgsConstructor
+@Table(name = "devices")
 public class Device  {
+  @Id
+  @GeneratedValue(strategy = GenerationType.IDENTITY)
   private int id;
   private double price;
   private double operatingVoltageInWatts;
