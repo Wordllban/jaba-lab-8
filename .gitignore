@@ -23,7 +23,7 @@
 hs_err_pid*
 
 # Checkstyle
-jaba-lab-8/target/*
+target/*
 
 # IDE files
 .idea
