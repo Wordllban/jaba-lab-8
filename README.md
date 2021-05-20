@@ -1,11 +1,16 @@
-# jaba-lab-8
-## Task
-  > Create Java Maven project, write code for class diagram from 2nd lab
-  > Use plagins: [Jacoco](https://mvnrepository.com/artifact/org.jacoco/jacoco-maven-plugin), [PMD](https://maven.apache.org/plugins/maven-pmd-plugin/download.cgi), [Checkstyle](https://maven.apache.org/plugins/maven-checkstyle-plugin/checkstyle-mojo.html) - ignore comments and magic number errors
-### Class diagram
-  > https://drive.google.com/file/d/1hJVIxBsMV8c0ZOKFfGD3e_cyiIdI1MsU/view?usp=sharing
+# jaba-lab-9
 
+## Task 
+  + Create REST service and implement CRUD operations on object from 8-th lab
+  + GET operation should use id, without id should return list of all objects
+  + Code should be checked with checkstyle and pmd plugins
+  + Code should be in a different pull request than lab8
+  + Controller and RestApplication should be in a different packages
+  + Objects should be stored in a `Map`
+ 
 ## To run
-  > Clone branch lab-8
-  >> Join in folder where is cloned branch through CMD
-  >>> Run javac App.java to compile, after that run App.java
+  + Clone/download lab9 branch
+  + `cd` into repo folder
+  + Run `mvn install`
+  + Run `java -jar target/lab9-VERSION.jar`, where `VERSION` is version of the app
+    (can be found in `pom.xml`, under `<version>` tag)

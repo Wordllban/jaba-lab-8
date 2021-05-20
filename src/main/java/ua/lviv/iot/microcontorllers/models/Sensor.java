@@ -14,7 +14,7 @@ public class Sensor extends Device {
                 DeviceType deviceType, String manufacturer, boolean isPowered,
                 SensorType sensorType) {
     super(price, operatingVoltageInWatts, currentConsumptionInWatts, deviceType,
-        manufacturer, isPowered);
+        manufacturer);
     this.sensorType = sensorType;
   }
 }
