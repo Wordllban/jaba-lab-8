@@ -1,98 +1,66 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <checkstyle version="8.29">
-<file name="D:\Java Projects\lab8\src\main\java\ua\lviv\iot\microcontorllers\App.java">
+<file name="D:\Java Projects\jaba-lab-8\src\main\java\ua\lviv\iot\microcontorllers\App.java">
 <error line="1" severity="error" message="Missing package-info.java file." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocPackageCheck"/>
 <error line="11" column="1" severity="error" message="Utility classes should not have a public or default constructor." source="com.puppycrawl.tools.checkstyle.checks.design.HideUtilityClassConstructorCheck"/>
-<error line="12" column="27" severity="error" message="Parameter args should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
 </file>
-<file name="D:\Java Projects\lab8\src\main\java\ua\lviv\iot\microcontorllers\controllers\DeviceController.java">
+<file name="D:\Java Projects\jaba-lab-8\src\main\java\ua\lviv\iot\microcontorllers\controllers\DeviceController.java">
 <error line="1" severity="error" message="Missing package-info.java file." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocPackageCheck"/>
-<error line="5" severity="error" message="Using the &apos;.*&apos; form of import should be avoided - org.springframework.web.bind.annotation.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
-<error line="15" column="7" severity="error" message="Variable &apos;counter&apos; must be private and have accessor methods." source="com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"/>
-<error line="18" column="3" severity="error" message="Class &apos;DeviceController&apos; looks like designed for extension (can be subclassed), but the method &apos;addDevice&apos; does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class &apos;DeviceController&apos; final or making the method &apos;addDevice&apos; static/final/abstract/empty, or adding allowed annotation for the method." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
-<error line="19" column="43" severity="error" message="Parameter device should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
-<error line="19" column="70" severity="error" message="&apos;{&apos; is not preceded with whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
-<error line="25" column="3" severity="error" message="Class &apos;DeviceController&apos; looks like designed for extension (can be subclassed), but the method &apos;getDevices&apos; does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class &apos;DeviceController&apos; final or making the method &apos;getDevices&apos; static/final/abstract/empty, or adding allowed annotation for the method." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
-<error line="26" column="41" severity="error" message="&apos;{&apos; is not preceded with whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
-<error line="30" column="3" severity="error" message="Class &apos;DeviceController&apos; looks like designed for extension (can be subclassed), but the method &apos;getDevice&apos; does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class &apos;DeviceController&apos; final or making the method &apos;getDevice&apos; static/final/abstract/empty, or adding allowed annotation for the method." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
-<error line="30" column="20" severity="error" message="&apos;=&apos; is not followed by whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
-<error line="31" column="43" severity="error" message="Parameter id should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
-<error line="31" column="70" severity="error" message="&apos;{&apos; is not preceded with whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
-<error line="33" severity="error" message="&apos;if&apos; construct must use &apos;{}&apos;s." source="com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"/>
-<error line="38" column="3" severity="error" message="Class &apos;DeviceController&apos; looks like designed for extension (can be subclassed), but the method &apos;deleteDevice&apos; does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class &apos;DeviceController&apos; final or making the method &apos;deleteDevice&apos; static/final/abstract/empty, or adding allowed annotation for the method." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
-<error line="38" column="23" severity="error" message="&apos;=&apos; is not followed by whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
-<error line="39" column="46" severity="error" message="Parameter id should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
-<error line="39" column="73" severity="error" message="&apos;{&apos; is not preceded with whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
-<error line="41" column="5" severity="error" message="&apos;if&apos; is not followed by whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
-<error line="41" column="23" severity="error" message="&apos;{&apos; is not preceded with whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
-<error line="48" column="3" severity="error" message="Class &apos;DeviceController&apos; looks like designed for extension (can be subclassed), but the method &apos;updateDevice&apos; does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class &apos;DeviceController&apos; final or making the method &apos;updateDevice&apos; static/final/abstract/empty, or adding allowed annotation for the method." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
-<error line="48" column="20" severity="error" message="&apos;=&apos; is not followed by whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
-<error line="49" column="46" severity="error" message="Parameter newDevice should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
-<error line="49" column="77" severity="error" message="Parameter id should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
-<error line="49" column="104" severity="error" message="&apos;{&apos; is not preceded with whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
-<error line="51" column="5" severity="error" message="&apos;if&apos; is not followed by whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
-<error line="51" column="26" severity="error" message="&apos;{&apos; is not preceded with whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="7" severity="error" message="Using the &apos;.*&apos; form of import should be avoided - org.springframework.web.bind.annotation.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="20" column="3" severity="error" message="Class &apos;DeviceController&apos; looks like designed for extension (can be subclassed), but the method &apos;getDeviceService&apos; does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class &apos;DeviceController&apos; final or making the method &apos;getDeviceService&apos; static/final/abstract/empty, or adding allowed annotation for the method." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="24" column="3" severity="error" message="Class &apos;DeviceController&apos; looks like designed for extension (can be subclassed), but the method &apos;getList&apos; does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class &apos;DeviceController&apos; final or making the method &apos;getList&apos; static/final/abstract/empty, or adding allowed annotation for the method." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="29" column="3" severity="error" message="Class &apos;DeviceController&apos; looks like designed for extension (can be subclassed), but the method &apos;addDevice&apos; does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class &apos;DeviceController&apos; final or making the method &apos;addDevice&apos; static/final/abstract/empty, or adding allowed annotation for the method." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="39" column="3" severity="error" message="Class &apos;DeviceController&apos; looks like designed for extension (can be subclassed), but the method &apos;addDevice&apos; does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class &apos;DeviceController&apos; final or making the method &apos;addDevice&apos; static/final/abstract/empty, or adding allowed annotation for the method." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="44" column="3" severity="error" message="Class &apos;DeviceController&apos; looks like designed for extension (can be subclassed), but the method &apos;updateDevice&apos; does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class &apos;DeviceController&apos; final or making the method &apos;updateDevice&apos; static/final/abstract/empty, or adding allowed annotation for the method." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="56" column="3" severity="error" message="Class &apos;DeviceController&apos; looks like designed for extension (can be subclassed), but the method &apos;deleteDevice&apos; does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class &apos;DeviceController&apos; final or making the method &apos;deleteDevice&apos; static/final/abstract/empty, or adding allowed annotation for the method." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
 </file>
-<file name="D:\Java Projects\lab8\src\main\java\ua\lviv\iot\microcontorllers\enums\DeviceType.java">
+<file name="D:\Java Projects\jaba-lab-8\src\main\java\ua\lviv\iot\microcontorllers\enums\DeviceType.java">
 <error line="1" severity="error" message="Missing package-info.java file." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocPackageCheck"/>
 </file>
-<file name="D:\Java Projects\lab8\src\main\java\ua\lviv\iot\microcontorllers\manager\DeviceManager.java">
+<file name="D:\Java Projects\jaba-lab-8\src\main\java\ua\lviv\iot\microcontorllers\enums\SensorType.java">
+</file>
+<file name="D:\Java Projects\jaba-lab-8\src\main\java\ua\lviv\iot\microcontorllers\enums\SortType.java">
+</file>
+<file name="D:\Java Projects\jaba-lab-8\src\main\java\ua\lviv\iot\microcontorllers\manager\DeviceManager.java">
 <error line="1" severity="error" message="Missing package-info.java file." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocPackageCheck"/>
 <error line="20" column="10" severity="error" message="Redundant &apos;final&apos; modifier." source="com.puppycrawl.tools.checkstyle.checks.modifier.RedundantModifierCheck"/>
-<error line="20" column="31" severity="error" message="Parameter device should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
-<error line="24" column="34" severity="error" message="Parameter type should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
-<error line="30" column="42" severity="error" message="Parameter type should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
-<error line="39" column="41" severity="error" message="Parameter type should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
-<error line="48" column="31" severity="error" message="Parameter devices should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
 <error line="48" column="44" severity="error" message="&apos;devices&apos; hides a field." source="com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"/>
 </file>
-<file name="D:\Java Projects\lab8\src\main\java\ua\lviv\iot\microcontorllers\models\Controller.java">
+<file name="D:\Java Projects\jaba-lab-8\src\main\java\ua\lviv\iot\microcontorllers\models\Controller.java">
 <error line="1" severity="error" message="Missing package-info.java file." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocPackageCheck"/>
 <error line="3" severity="error" message="Using the &apos;.*&apos; form of import should be avoided - lombok.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
-<error line="12" column="21" severity="error" message="Parameter price should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
-<error line="12" column="35" severity="error" message="Parameter operatingVoltageInWatts should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
-<error line="12" column="67" severity="error" message="Parameter currentConsumptionInWatts should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
-<error line="13" column="21" severity="error" message="Parameter deviceType should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
-<error line="13" column="71" severity="error" message="Parameter isPowered should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
-<error line="14" column="21" severity="error" message="Parameter totalNumberOfPins should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
 <error line="14" column="25" severity="error" message="&apos;totalNumberOfPins&apos; hides a field." source="com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"/>
 </file>
-<file name="D:\Java Projects\lab8\src\main\java\ua\lviv\iot\microcontorllers\models\Device.java">
-<error line="19" column="17" severity="error" message="Parameter price should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
-<error line="19" column="24" severity="error" message="&apos;price&apos; hides a field." source="com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"/>
-<error line="19" column="31" severity="error" message="Parameter operatingVoltageInWatts should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
-<error line="19" column="38" severity="error" message="&apos;operatingVoltageInWatts&apos; hides a field." source="com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"/>
-<error line="19" column="63" severity="error" message="Parameter currentConsumptionInWatts should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
-<error line="19" column="70" severity="error" message="&apos;currentConsumptionInWatts&apos; hides a field." source="com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"/>
-<error line="20" column="17" severity="error" message="Parameter deviceType should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
-<error line="20" column="28" severity="error" message="&apos;deviceType&apos; hides a field." source="com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"/>
-<error line="20" column="40" severity="error" message="Parameter manufacturer should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
-<error line="20" column="47" severity="error" message="&apos;manufacturer&apos; hides a field." source="com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"/>
+<file name="D:\Java Projects\jaba-lab-8\src\main\java\ua\lviv\iot\microcontorllers\models\Device.java">
+<error line="5" column="8" severity="error" message="Unused import - lombok.NonNull." source="com.puppycrawl.tools.checkstyle.checks.imports.UnusedImportsCheck"/>
+<error line="8" severity="error" message="Using the &apos;.*&apos; form of import should be avoided - javax.persistence.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="25" column="24" severity="error" message="&apos;price&apos; hides a field." source="com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"/>
+<error line="25" column="38" severity="error" message="&apos;operatingVoltageInWatts&apos; hides a field." source="com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"/>
+<error line="25" column="70" severity="error" message="&apos;currentConsumptionInWatts&apos; hides a field." source="com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"/>
+<error line="26" column="28" severity="error" message="&apos;deviceType&apos; hides a field." source="com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"/>
+<error line="26" column="47" severity="error" message="&apos;manufacturer&apos; hides a field." source="com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"/>
 </file>
-<file name="D:\Java Projects\lab8\src\main\java\ua\lviv\iot\microcontorllers\models\Motor.java">
+<file name="D:\Java Projects\jaba-lab-8\src\main\java\ua\lviv\iot\microcontorllers\models\Motor.java">
 <error line="3" severity="error" message="Using the &apos;.*&apos; form of import should be avoided - lombok.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
-<error line="12" column="16" severity="error" message="Parameter price should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
-<error line="12" column="30" severity="error" message="Parameter operatingVoltageInWatts should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
-<error line="12" column="62" severity="error" message="Parameter currentConsumptionInWatts should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
-<error line="13" column="16" severity="error" message="Parameter deviceType should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
-<error line="13" column="39" severity="error" message="Parameter manufacturer should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
-<error line="13" column="60" severity="error" message="Parameter isPowered should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
-<error line="14" column="16" severity="error" message="Parameter revolutionsPerSec should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
 <error line="14" column="23" severity="error" message="&apos;revolutionsPerSec&apos; hides a field." source="com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"/>
 </file>
-<file name="D:\Java Projects\lab8\src\main\java\ua\lviv\iot\microcontorllers\models\Sensor.java">
+<file name="D:\Java Projects\jaba-lab-8\src\main\java\ua\lviv\iot\microcontorllers\models\Sensor.java">
 <error line="3" severity="error" message="Using the &apos;.*&apos; form of import should be avoided - lombok.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
-<error line="13" column="17" severity="error" message="Parameter price should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
-<error line="13" column="31" severity="error" message="Parameter operatingVoltageInWatts should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
-<error line="13" column="63" severity="error" message="Parameter currentConsumptionInWatts should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
-<error line="14" column="17" severity="error" message="Parameter deviceType should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
-<error line="14" column="40" severity="error" message="Parameter manufacturer should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
-<error line="14" column="61" severity="error" message="Parameter isPowered should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
-<error line="15" column="17" severity="error" message="Parameter sensorType should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
 <error line="15" column="28" severity="error" message="&apos;sensorType&apos; hides a field." source="com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"/>
 </file>
-<file name="D:\Java Projects\lab8\src\main\java\ua\lviv\iot\microcontorllers\SpringApp.java">
+<file name="D:\Java Projects\jaba-lab-8\src\main\java\ua\lviv\iot\microcontorllers\repository\DeviceRepository.java">
+<error line="1" severity="error" message="Missing package-info.java file." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocPackageCheck"/>
+</file>
+<file name="D:\Java Projects\jaba-lab-8\src\main\java\ua\lviv\iot\microcontorllers\service\DeviceService.java">
+<error line="1" severity="error" message="Missing package-info.java file." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocPackageCheck"/>
+<error line="16" column="3" severity="error" message="Class &apos;DeviceService&apos; looks like designed for extension (can be subclassed), but the method &apos;allDevices&apos; does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class &apos;DeviceService&apos; final or making the method &apos;allDevices&apos; static/final/abstract/empty, or adding allowed annotation for the method." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="19" column="3" severity="error" message="Class &apos;DeviceService&apos; looks like designed for extension (can be subclassed), but the method &apos;saveDevice&apos; does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class &apos;DeviceService&apos; final or making the method &apos;saveDevice&apos; static/final/abstract/empty, or adding allowed annotation for the method." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="22" column="3" severity="error" message="Class &apos;DeviceService&apos; looks like designed for extension (can be subclassed), but the method &apos;getDevice&apos; does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class &apos;DeviceService&apos; final or making the method &apos;getDevice&apos; static/final/abstract/empty, or adding allowed annotation for the method." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="25" column="3" severity="error" message="Class &apos;DeviceService&apos; looks like designed for extension (can be subclassed), but the method &apos;deleteDevice&apos; does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class &apos;DeviceService&apos; final or making the method &apos;deleteDevice&apos; static/final/abstract/empty, or adding allowed annotation for the method." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+</file>
+<file name="D:\Java Projects\jaba-lab-8\src\main\java\ua\lviv\iot\microcontorllers\SpringApp.java">
 <error line="5" column="1" severity="error" message="Utility classes should not have a public or default constructor." source="com.puppycrawl.tools.checkstyle.checks.design.HideUtilityClassConstructorCheck"/>
-<error line="7" column="27" severity="error" message="Parameter args should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+</file>
+<file name="D:\Java Projects\jaba-lab-8\src\main\resources\application.properties">
 </file>
 </checkstyle>

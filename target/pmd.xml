@@ -2,23 +2,36 @@
 <pmd xmlns="http://pmd.sourceforge.net/report/2.0.0"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://pmd.sourceforge.net/report/2.0.0 http://pmd.sourceforge.net/report_2_0_0.xsd"
-    version="6.21.0" timestamp="2021-05-13T23:49:07.603">
-<file name="D:\Java Projects\lab8\src\main\java\ua\lviv\iot\microcontorllers\manager\DeviceManager.java">
+    version="6.21.0" timestamp="2021-05-21T01:31:38.143">
+<file name="D:\Java Projects\jaba-lab-8\src\main\java\ua\lviv\iot\microcontorllers\controllers\DeviceController.java">
+<violation beginline="47" endline="47" begincolumn="14" endcolumn="24" rule="UnusedLocalVariable" ruleset="Best Practices" package="ua.lviv.iot.microcontorllers.controllers" class="DeviceController" method="updateDevice" variable="existDevice" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#unusedlocalvariable" priority="3">
+Avoid unused local variables such as 'existDevice'.
+</violation>
+<violation beginline="59" endline="59" begincolumn="14" endcolumn="24" rule="UnusedLocalVariable" ruleset="Best Practices" package="ua.lviv.iot.microcontorllers.controllers" class="DeviceController" method="deleteDevice" variable="existDevice" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#unusedlocalvariable" priority="3">
+Avoid unused local variables such as 'existDevice'.
+</violation>
+</file>
+<file name="D:\Java Projects\jaba-lab-8\src\main\java\ua\lviv\iot\microcontorllers\manager\DeviceManager.java">
 <violation beginline="20" endline="22" begincolumn="16" endcolumn="3" rule="UnnecessaryModifier" ruleset="Code Style" package="ua.lviv.iot.microcontorllers.manager" class="DeviceManager" method="addDevice" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#unnecessarymodifier" priority="3">
 Unnecessary modifier 'final' on method 'addDevice': the method is already in a final class
 </violation>
 </file>
-<file name="D:\Java Projects\lab8\src\main\java\ua\lviv\iot\microcontorllers\models\Controller.java">
+<file name="D:\Java Projects\jaba-lab-8\src\main\java\ua\lviv\iot\microcontorllers\models\Controller.java">
 <violation beginline="13" endline="13" begincolumn="79" endcolumn="87" rule="UnusedFormalParameter" ruleset="Best Practices" package="ua.lviv.iot.microcontorllers.models" class="Controller" method="Controller" variable="isPowered" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#unusedformalparameter" priority="3">
 Avoid unused constructor parameters such as 'isPowered'.
 </violation>
 </file>
-<file name="D:\Java Projects\lab8\src\main\java\ua\lviv\iot\microcontorllers\models\Motor.java">
+<file name="D:\Java Projects\jaba-lab-8\src\main\java\ua\lviv\iot\microcontorllers\models\Device.java">
+<violation beginline="5" endline="5" begincolumn="1" endcolumn="22" rule="UnusedImports" ruleset="Best Practices" package="ua.lviv.iot.microcontorllers.models" class="Device" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#unusedimports" priority="4">
+Avoid unused imports such as 'lombok.NonNull'
+</violation>
+</file>
+<file name="D:\Java Projects\jaba-lab-8\src\main\java\ua\lviv\iot\microcontorllers\models\Motor.java">
 <violation beginline="13" endline="13" begincolumn="68" endcolumn="76" rule="UnusedFormalParameter" ruleset="Best Practices" package="ua.lviv.iot.microcontorllers.models" class="Motor" method="Motor" variable="isPowered" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#unusedformalparameter" priority="3">
 Avoid unused constructor parameters such as 'isPowered'.
 </violation>
 </file>
-<file name="D:\Java Projects\lab8\src\main\java\ua\lviv\iot\microcontorllers\models\Sensor.java">
+<file name="D:\Java Projects\jaba-lab-8\src\main\java\ua\lviv\iot\microcontorllers\models\Sensor.java">
 <violation beginline="14" endline="14" begincolumn="69" endcolumn="77" rule="UnusedFormalParameter" ruleset="Best Practices" package="ua.lviv.iot.microcontorllers.models" class="Sensor" method="Sensor" variable="isPowered" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#unusedformalparameter" priority="3">
 Avoid unused constructor parameters such as 'isPowered'.
 </violation>
