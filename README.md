@@ -6,6 +6,6 @@
   > https://drive.google.com/file/d/1hJVIxBsMV8c0ZOKFfGD3e_cyiIdI1MsU/view?usp=sharing
 
 ## To run
-  > Clone branch lab-8
-  >> Join in folder where is cloned branch through CMD
-  >>> Run javac App.java to compile, after that run App.java
+  + Clone branch lab-8
+  + Join in folder where is cloned branch through CMD
+  + Run javac App.java to compile, after that run App.java
